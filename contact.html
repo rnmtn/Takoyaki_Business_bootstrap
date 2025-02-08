@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
+    <title>Contact Us - Delicious Takoyaki</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .header-bg {
+            background-image: url('images/mainbg1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark" style="background-color: black;">
+        <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="" width="60" height="60">Delicious Takoyaki</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="order.html">Order Online</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+    
+        <header class="header-bg text-white text-center py-5">
+            <h1>Welcome to Delicious Takoyaki!</h1>
+            <p>Authentic Japanese Takoyaki made with love.</p>
+            <br>
+            <h2>Contact Us</h2>
+            <p>Get in touch!</p>
+        </header>
+
+        <section class="container mt-5">
+            <h2 class="text-center">Contact Us</h2>
+            <form action="send_message.php" method="POST" class="mt-4">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+            <div class="mt-4">
+                <p><strong>Location:</strong> 123 Takoyaki St, Foodie City</p>
+                <p><strong>Hours:</strong> Mon-Sun 11 AM - 10 PM</p>
+                <p><strong>Follow us on social media!</strong></p>
+                <div>
+                    <a href="https://www.facebook.com/sampleprofile" target="_blank" class="text-decoration-none mr-3">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://www.twitter.com/sampleprofile" target="_blank" class="text-decoration-none mr-3">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/sampleprofile" target="_blank" class="text-decoration-none mr-3">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sampleprofile" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <footer class="bg-dark text-white text-center py-4">
+            <p>&copy; 2024 Delicious Takoyaki. All rights reserved.</p>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+</body>
+</html>
